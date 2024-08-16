@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <br>Informe o preço do produto: <input type="number" name="n1" id="n1"> <br>
+    <br>Informe a porcentagem de desconto: <input type="number" name="n2" id="n2"> <br>
+    <br>
+    <button onclick="calcular()">calcular</button>
+    <br>
+    <h3><span name="resultado" id="resultado"></h3>
+</body>
+<script>
+    function calcular() {
+        var n1  = parseInt(document.getElementById("n1").value)
+        var n2 = parseInt(document.getElementById("n2").value)
+        var desc = n1*(n2/100)
+        var Vtotal = n1 - desc
+        document.getElementById("resultado").innerHTML = "O valor total a ser pago é: " + Vtotal
+    }
+</script>
+
+</html>

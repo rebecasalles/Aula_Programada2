@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br>Informe o comprimento: <input type="number" name="n1" id="n1"> <br>
+    <br>Informe a largura: <input type="number" name="n2" id="n2"> <br>
+    <br>
+    <button onclick="calcular()">calcular</button>
+    <br>
+    <h3><span name="resultado" id="resultado"></h3>
+</body>
+<script>
+    function calcular() {
+        var comp = parseInt(document.getElementById("n1").value)
+        var larg = parseInt(document.getElementById("n2").value)
+        var area = comp * larg
+        document.getElementById("resultado").innerHTML = area
+    }
+</script>
+</html>

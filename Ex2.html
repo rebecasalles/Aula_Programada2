@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <br>Informe a temperatura em Celsius: <input type="number" name="n1" id="n1"> <br>
+    <br>
+    <button onclick="calcular()">calcular</button>
+    <br>
+    <h3><span name="resultado" id="resultado"></h3>
+</body>
+<script>
+    function calcular() {
+        var celsius = parseInt(document.getElementById("n1").value)
+        var conv = (celsius * 1.8) + 32
+        document.getElementById("resultado").innerHTML = "Este é a temperatura em fahrenheit: " + conv
+    }
+</script>
+
+</html>
